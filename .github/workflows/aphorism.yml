@@ -27,7 +27,7 @@ jobs:
           aphorism=$(echo "$aphorism" | tr -d '"')
           should_or_not=$(echo "$should_or_not" | tr -d '"')
 
-          echo "$(date +'%Y-%m-%d') | $should_or_not | $aphorism" >> aphorism.md
+          echo "| $(date +'%Y-%m-%d') | $should_or_not | $aphorism |" >> aphorism.md
 
       - name: Commit files
         run: |
